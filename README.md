@@ -40,8 +40,7 @@ This command will display the tool's usage guide, showcasing each available opti
 This tool is specifically catered toward penetration testers and bug bounty hunters who receive authorization from an organization to simulate an attacker attempting network/web-based intrusion.
 **Educational purposes only.**
 
-**Note:** This tool may encounter issues due to technologies like load balancing. Espcially while dealing with cloud-native hosts. It's on my long list of TODOs.
+**Note:** There may be cases where load balancing affects scan results. Espcially when dealing with cloud-native hosts.
 
-# TODO:
+# TODOs:
 * Allow users to specify an output location. Mergre output into one file?...
-* Error handling for instances where Load Balancing/ELB/rotating IP addresses impact results.
