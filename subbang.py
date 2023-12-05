@@ -14,7 +14,7 @@ def print_subbang():
     SSSS   U   U  BBBB      BBBB   AAAAA  N   N  GGGGG
     S      U   U  B   B     B   B  A   A  NN  N  G   G
     SSSS   U   U  BBBB      BBBB   AAAAA  N N N  GGGGG  
-       S   U   B  B   B     B   A  A   N  N  GG      G
+       S   U   U  B   B     B   B  A   A  N  NN      G
     SSSS    UUU   BBBB      BBBB   A   A  N   N  GGGGG 
     """)
 
