@@ -2,7 +2,7 @@
 Subbang is a tool built to automate subdomain enumeration during a penetration test through the use of the CRT.SH website. Thank you ChatGPT for helping me iron out some of these functions.
 
 # Usage:
-Provide a single domain or multiple domains through a file using the -f flag (--file) when running the tool.
+Provide a single domain via cli or multiple domains through a file using the -f flag (--file) when running the tool.
 Additionally, the scope.txt file is used to specify the IP addresses defining the scope of interest.
 
 **Example 1:** Discover Subdomains for a Single Domain
@@ -10,7 +10,11 @@ Additionally, the scope.txt file is used to specify the IP addresses defining th
 
 Command:
 
-```python3 subbang.py example.com scope.txt```
+```
+python3 subbang.py scope.txt
+
+Enter the domain name: example.com
+```
 
 This command will initiate the tool to retrieve subdomains associated with example.com, map them to their corresponding IP addresses, compare them against the IPs in scope.txt, and display the matching subdomains within the specified scope.
 
