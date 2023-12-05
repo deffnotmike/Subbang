@@ -5,8 +5,8 @@ import argparse
 
 def print_usage():
     print("Usage:")
-    print("python script_name.py -f domains_filename scope_filename")
-    print("Example: python script_name.py -f domains.txt scope.txt")
+    print("python3 subbang.py -f domains_filename scope_filename")
+    print("Example: python3 subbang.py -f domains.txt scope.txt")
     sys.exit(0)
 
 def print_subbang():
@@ -43,7 +43,7 @@ def get_subdomains_from_bash_command(domain):
 # If no file argument is provided, check if a single domain name is entered manually
 if not args.file:
     print_subbang()
-    domain_name = input("Enter your domain name: ")
+    domain_name = input("Enter the domain name: ")
     domains = [domain_name]
 else:
     print_subbang()
@@ -115,4 +115,5 @@ compare_results_with_scope(ip_mapping_result, args.scope_file)
 
 # Mention the files where subdomains and in-scope results are written
 print("All discovered subdomains written to subdomains.txt")
-print("In scope results written to results.txt")
+print("In-scope results written to results.txt")
+print("Happy Hacking!")
