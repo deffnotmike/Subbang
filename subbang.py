@@ -71,7 +71,7 @@ def map_subdomains_to_ip(subdomains):
             # Extract IP address using regex
             ip_addresses = re.findall(r'Address: ([\d.:a-fA-F]+)', result.stdout)
             
-            # Filter out localhost and non-authoritative answers
+            # Filter out localhost
             filtered_ips = [ip for ip in ip_addresses if ip != '127.0.0.53']
             
             if filtered_ips:
