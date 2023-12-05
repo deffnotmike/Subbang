@@ -40,4 +40,4 @@ This command will display the tool's usage guide, showcasing each available opti
 This tool is specifically catered toward penetration testers and bug bounty hunters who receive authorization from an organization to simulate an attacker attempting network/web-based intrusion.
 **Educational purposes only.**
 
-**Note:** This tool may encounter issues due to technologies like load balancing (cloud-native hosts). That is a work in progress. 
+**Note:** This tool may encounter issues due to technologies like load balancing. Espcially while dealing with cloud-native hosts. It's on my long list of TODOs.
