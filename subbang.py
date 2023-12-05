@@ -30,6 +30,7 @@ if '-h' in sys.argv or '--help' in sys.argv:
     print_usage()
 
 # Function to execute the Bash command and capture subdomains
+# TODO: Replace this with Python native alternative. Request Library.
 def get_subdomains_from_bash_command(domain):
     try:
         bash_command = f"curl -s https://crt.sh/\?q\={domain}\&output\=json | jq . | grep name | cut -d \":\" -f2 | grep -v \"CN=\" | cut -d '\"' -f2 | awk '{{gsub(/\\\\n/,\"\\n\");}}1;' | sort -u | grep -v C="
